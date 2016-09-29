@@ -24,7 +24,8 @@ module.exports = {
         extensions: ['', '.js', 'jsx'],
         //配置别名,在项目中可以缩短引用资源require('styles/main.css')相当于require('src/styles/main.css')
         alias: {
-            styles: __dirname + "/src/styles"
+            styles: __dirname + "/src/styles",
+		    js:__dirname + "/src/js"	
         }
     },
     module: {
