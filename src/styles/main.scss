@@ -1,0 +1,33 @@
+$htmlFontSize: 62.5%; //body默认字体的大小
+$gridContentWidth:413px;
+$gridWidth:60px;
+$gridHeight:60px;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+    font-size: $htmlFontSize;
+}
+
+.gridContent {
+    width: $gridContentWidth;
+    height: auto;
+    position: relative;
+    top:100px;
+    left:200px;
+    .lineGrid {
+        width: gridContentWidth;
+        height: $gridHeight;
+        position: relative;
+        margin-top:-1px;
+        .grid {
+            width: $gridWidth;
+            height: $gridHeight;
+            border: 1px solid #999999;
+            box-sizing: border-box;
+            text-align:center;
+            line-height:60px;
+        }
+    }
+}
