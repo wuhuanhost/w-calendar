@@ -1,13 +1,3 @@
-import {_}  from "lodash";
+import Calendar from "js/Calendar.js"
 
-
-class Calendar{
-
-	construcuor(name){
-		this.name=name;
-	}
-	
-
-
-}
-
+var cal=new Calendar("");
