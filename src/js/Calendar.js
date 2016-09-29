@@ -21,7 +21,6 @@ class Calendar {
      * @return {Function} [description]
      */
     next(_this) {
-
             var next = parseInt(_this.getAttribute("data"));
             var data = this.getMonthData(2016, ++next);
             _this.setAttribute("data", next);
@@ -97,7 +96,6 @@ class Calendar {
     getFebruaryDays(year) {
         //平年的二月有28天
         //闰年的二月有29天，（年份是100的整数倍、能被400整除或者年份不是100的整数倍能被4整除）
-        //
         return (year % 100 === 0) ? (year % 400 === 0 ? 29 : 28) : (year % 4 === 0 ? 29 : 28);
     }
 
@@ -123,7 +121,6 @@ class Calendar {
         });
         document.body.appendChild(prev);
         document.body.appendChild(next);
-
     };
 
     // 绘制日历的格子
