@@ -8,7 +8,7 @@ class Calendar {
     // 渲染方法
     render() {
         var h1 = document.createElement("h1");
-        h1.innerHTML = "hello calendar!!!";
+        h1.innerHTML = this.str;
         document.body.appendChild(h1);
     };
 
