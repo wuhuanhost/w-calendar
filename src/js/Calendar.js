@@ -6,9 +6,10 @@ class Calendar {
         this.str = str;
         console.log('Calendar类初始化......' + this.str);
         this.render();
-        //默认公历每月的天数，因为平年和闰年，二月的天数不一样，
+        //默认公历每月的天数，数组的第二个元素表示二月份的天数，因为平年和闰年二月的天数不一样，
         //所以初始化的时候默认为0，一会动态计算
         this.everyMouthDays = [31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        //动态计算每年二月份有多少天
         this.everyMouthDays[1] = this.getFebruaryDays(2016);
         var weekday = ["星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
         var index = this.getCurrentMonthFirstIsWeeked(2016, 9);
