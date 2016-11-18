@@ -1,2 +1,2 @@
 # w-calendar
-web日历组件（es6）
+响应式web日历（es6）
