@@ -16,7 +16,17 @@ body {
 }
 
 #app h1{
-    color:#2b94d5;
+    color:#89c0b0;
+}
+#app button{
+    width:90px;
+    height:24px;
+    border:0px solid #ffffff;
+    margin:0 20px;
+    color:#999999;
+    background-color:#eeeeee;
+    font-size:14px;
+    cursor:pointer;
 }
 .gridContent {
     width: $gridContentWidth;
@@ -36,16 +46,16 @@ body {
         font-family: $fontFamily;
     }
     .title{
-        color:#4c98ce;
+        color:#9bb3f6;
         font-size:18px;
     }
     .current {
-        color: #6876f3;
+        color: #cf4646;
     }
     .last{
         color:#e2e0e0;
     }
     .next{
-        color:#f7bebe;
+        color:#e2e0e0;
     }
 }

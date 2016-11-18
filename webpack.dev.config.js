@@ -73,7 +73,7 @@ module.exports = {
 			"window.jQuery":"jquery"
 		}),
         new HtmlWebpackPlugin({
-            title: 'web日历组件',
+            title: 'web日历',
             favicon: __dirname + '/favicon.ico',
             filename: 'index.html',	
             template: __dirname + '/index.html',	
