@@ -1,21 +1,25 @@
 $htmlFontSize: 62.5%; //body默认字体的大小
-$gridContentWidth:693px;
-$gridWidth:100px;
-$gridHeight:100px;
-$fontFamily:'幼圆';
+$gridContentWidth:100%;
+$gridWidth:40px;
+$gridHeight:40px;
+$fontFamily:'Microsoft YaHei';
 body {
     margin: 0;
     padding: 0;
     background-color: #eeeeee;
     font-size: $htmlFontSize;
 }
-
+#app {
+    margin-top:20px;
+    text-align: center;
+}
 .gridContent {
     width: $gridContentWidth;
     height: auto;
-    position: relative;
-    top: 100px;
-    left: 200px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -140px;
     .grid {
         width: $gridWidth;
         height: $gridHeight;
@@ -23,7 +27,10 @@ body {
         box-sizing: border-box;
         text-align: center;
         line-height: $gridHeight;
-        font-size: 3rem;
+        font-size: 1rem;
         font-family: $fontFamily;
+    }
+    .current {
+        color: red;
     }
 }
