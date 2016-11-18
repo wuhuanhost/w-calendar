@@ -218,7 +218,7 @@ class Calendar {
         for (var k = 0; k < weekday.length; k++) {
             var grid = document.createElement('div');
             grid.setAttribute('style', 'position:absolute;left:' + 39 * k + 'px;margin-top:-39px;font-weight:bold;');
-            grid.setAttribute('class', 'grid');
+            grid.setAttribute('class', 'grid title');
             grid.innerText = weekday[k];
             gridContent.appendChild(grid);
         }

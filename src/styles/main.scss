@@ -6,7 +6,7 @@ $fontFamily:'Microsoft YaHei';
 body {
     margin: 0;
     padding: 0;
-    background-color: #eeeeee;
+    background-color: #ffffff;
     font-size: $htmlFontSize;
     font-family: $fontFamily;
 }
@@ -15,6 +15,9 @@ body {
     text-align: center;
 }
 
+#app h1{
+    color:#2b94d5;
+}
 .gridContent {
     width: $gridContentWidth;
     height: auto;
@@ -25,14 +28,24 @@ body {
     .grid {
         width: $gridWidth;
         height: $gridHeight;
-        border: 1px solid #999999;
+        border: 1px solid #eeeeee;
         box-sizing: border-box;
         text-align: center;
         line-height: $gridHeight;
         font-size: 1rem;
         font-family: $fontFamily;
     }
+    .title{
+        color:#4c98ce;
+        font-size:18px;
+    }
     .current {
-        color: red;
+        color: #6876f3;
+    }
+    .last{
+        color:#e2e0e0;
+    }
+    .next{
+        color:#f7bebe;
     }
 }
