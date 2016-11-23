@@ -15,8 +15,9 @@ class Calendar {
         var weekday = ["星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
         var index = this.getCurrentMonthFirstIsWeeked(2016, 11); //给定年月第一天是星期几
         console.log(weekday[index])
-        this.currentYear = 2016;
-        this.curentMonth = 11;
+        this.currentYear = new Date().getFullYear();
+        this.curentMonth = new Date().getMonth()+1;
+		this.curentDay = new Date().getDate();
         var data = this.getCurrentDays(this.currentYear, this.curentMonth);
         console.log("+++++++++++")
         console.log(data)
@@ -227,15 +228,29 @@ class Calendar {
         for (var i = 0, len1 = arr.length; i < len1; i++) {
             for (var j = 0, len2 = arr[i].length; j < len2; j++) {
                 var grid = document.createElement('div');
-                grid.setAttribute('class', 'grid ' + arr[i][j].flag + '');
+				grid.setAttribute('class', 'grid ' + arr[i][j].flag + '');
                 grid.setAttribute('style', 'position:absolute;left:' + 39 * j + 'px;top:' + 39 * i + 'px')
                 grid.innerText = arr[i][j].num;
                 gridContent.appendChild(grid);
             }
         }
         document.querySelector("#calendar").appendChild(gridContent);
+		this.currentDayStyle();
 
-    }
+    };
+
+
+	currentDayStyle(){
+		var days=document.querySelectorAll(".current");
+		console.log("+++++++++++++++++")
+
+			for(var i=0,m=days.length;i<m;i++){
+			console.log(days[i].innerText+">>>>"+this.curentDay+" "+(parseInt(days[i].innerText)===this.curentDay))
+				if(parseInt(days[i].innerText)===this.curentDay){
+					days[i].className="grid current currentDay";
+				}
+			}
+	}
 }
 
 export default Calendar;
